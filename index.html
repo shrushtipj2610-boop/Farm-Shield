@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FarmShield Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app-shell">
+
+  <aside class="sidebar">
+    <div class="logo-box">
+      <img src="assets/farm_logo.png" alt="FarmShield logo">
+      <div>
+        <h2>FarmShield</h2>
+        <p>By SoilSync</p>
+      </div>
+    </div>
+
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html" class="active"><img class="nav-icon" src="assets/dashboard_logo.png" alt="">Dashboard</a>
+      <a href="analytics.html"><img class="nav-icon" src="assets/analysics_logo1.png" alt="">Analytics</a>
+      <a href="alerts.html"><img class="nav-icon" src="assets/alert_logo.png" alt="">Alerts</a>
+      <a href="crop.html"><img class="nav-icon" src="assets/crop_logo.png" alt="">Crop Health</a>
+    </nav>
+  </aside>
+
+  <main class="main">
+    <section class="page-title dashboard-title">
+      <h1>Welcome to FarmShield</h1>
+      <p>IoT-based real-time crop &amp; soil monitoring</p>
+    </section>
+
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">Live farm telemetry</span>
+        <h2>Smart Agriculture IoT System</h2>
+        <p>Track temperature, humidity, soil moisture, and pH from one clean dashboard.</p>
+      </div>
+      <div class="hero-panel" aria-label="System status">
+        <span class="status-dot"></span>
+        <div>
+          <strong>System online</strong>
+          <small>Realtime Firebase sync</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-heading">
+      <div>
+        <p class="eyebrow">Overview</p>
+        <h2>Current Field Conditions</h2>
+      </div>
+      <span class="updated-label">Auto updating</span>
+    </section>
+
+    <section class="metric-grid">
+      <article class="metric-card temp-card">
+        <div class="metric-icon">T</div>
+        <div>
+          <p>Temperature</p>
+          <strong><span id="temp">--</span></strong>
+        </div>
+      </article>
+
+      <article class="metric-card hum-card">
+        <div class="metric-icon">H</div>
+        <div>
+          <p>Humidity</p>
+          <strong><span id="hum">--</span></strong>
+        </div>
+      </article>
+
+      <article class="metric-card soil-card">
+        <div class="metric-icon">S</div>
+        <div>
+          <p>Soil Moisture</p>
+          <strong><span id="soil">--</span></strong>
+        </div>
+      </article>
+
+      <article class="metric-card ph-card">
+        <div class="metric-icon">pH</div>
+        <div>
+          <p>pH Level</p>
+          <strong><span id="ph">--</span></strong>
+        </div>
+      </article>
+    </section>
+  </main>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
