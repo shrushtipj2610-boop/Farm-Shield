@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Analytics</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="container">
+
+<div class="sidebar">
+  <h2>FarmShield</h2>
+  <a href="index.html"><img class="nav-icon" src="assets/dashboard_logo.webp" alt="">Dashboard</a>
+  <a href="analytics.html" class="active"><img class="nav-icon" src="assets/analytics_logo.webp" alt="">Analytics</a>
+  <a href="alerts.html"><img class="nav-icon" src="assets/alert_logo.jpg" alt="">Alerts</a>
+  <a href="crop.html"><img class="nav-icon" src="assets/crop_logo.avif" alt="">Crop Health</a>
+</div>
+
+<div class="main">
+  <div class="header with-icon analytics-title">Analytics</div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Temperature</h3>
+      <div id="temp" class="value">--</div>
+    </div>
+
+    <div class="card">
+      <h3>Humidity</h3>
+      <div id="hum" class="value">--</div>
+    </div>
+
+    <div class="card">
+      <h3>Soil Moisture</h3>
+      <div id="soil" class="value">--</div>
+    </div>
+  </div>
+
+  <div class="box">
+    Graph section receives the same live Firebase values. You can add charts here later.
+  </div>
+
+</div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+</body>
+</html>
