@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FarmShield Dashboard</title>
+  <link rel="icon" type="image/png" href="assets/farm_logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/farm_logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -27,67 +29,57 @@
     </nav>
   </aside>
 
-  <main class="main">
-    <section class="page-title dashboard-title">
-      <h1>Welcome to FarmShield</h1>
-      <p>IoT-based real-time crop &amp; soil monitoring</p>
-    </section>
-
-    <section class="hero">
-      <div class="hero-content">
-        <span class="eyebrow">Live farm telemetry</span>
-        <h2>Smart Agriculture IoT System</h2>
-        <p>Track temperature, humidity, soil moisture, and pH from one clean dashboard.</p>
+  <main class="main dashboard-main">
+    <section class="dashboard-hero">
+      <div class="dashboard-hero-copy">
+        <span class="dashboard-pill">Live farm telemetry</span>
+        <h1>
+          Smart Agriculture
+          <span>IoT System</span>
+        </h1>
+        <p>
+          FarmShield is an IoT-powered crop &amp; soil monitoring system that helps
+          farmers detect issues early, optimize resources and grow healthier yields.
+        </p>
       </div>
-      <div class="hero-panel" aria-label="System status">
-        <span class="status-dot"></span>
-        <div>
-          <strong>System online</strong>
-          <small>Realtime Firebase sync</small>
+
+      <div class="dashboard-panel" aria-label="Current field conditions">
+        <div class="dashboard-panel-head">
+          <div>
+            <p>Realtime Firebase sync</p>
+            <h2>System online</h2>
+          </div>
+          <span class="dashboard-signal" aria-hidden="true"></span>
         </div>
+
+        <div class="dashboard-panel-grid">
+          <div class="dashboard-panel-metric temp">
+            <span>T</span>
+            <small>Temp</small>
+            <strong><span id="temp">--</span></strong>
+          </div>
+
+          <div class="dashboard-panel-metric humidity">
+            <span>H</span>
+            <small>Humidity</small>
+            <strong><span id="hum">--</span></strong>
+          </div>
+
+          <div class="dashboard-panel-metric moisture">
+            <span>M</span>
+            <small>Moisture</small>
+            <strong><span id="soil">--</span></strong>
+          </div>
+
+          <div class="dashboard-panel-metric ph">
+            <span>pH</span>
+            <small>pH</small>
+            <strong><span id="ph">--</span></strong>
+          </div>
+        </div>
+
+        <div class="dashboard-panel-note">All sensors connected. Live values update automatically.</div>
       </div>
-    </section>
-
-    <section class="section-heading">
-      <div>
-        <p class="eyebrow">Overview</p>
-        <h2>Current Field Conditions</h2>
-      </div>
-      <span class="updated-label">Auto updating</span>
-    </section>
-
-    <section class="metric-grid">
-      <article class="metric-card temp-card">
-        <div class="metric-icon">T</div>
-        <div>
-          <p>Temperature</p>
-          <strong><span id="temp">--</span></strong>
-        </div>
-      </article>
-
-      <article class="metric-card hum-card">
-        <div class="metric-icon">H</div>
-        <div>
-          <p>Humidity</p>
-          <strong><span id="hum">--</span></strong>
-        </div>
-      </article>
-
-      <article class="metric-card soil-card">
-        <div class="metric-icon">S</div>
-        <div>
-          <p>Soil Moisture</p>
-          <strong><span id="soil">--</span></strong>
-        </div>
-      </article>
-
-      <article class="metric-card ph-card">
-        <div class="metric-icon">pH</div>
-        <div>
-          <p>pH Level</p>
-          <strong><span id="ph">--</span></strong>
-        </div>
-      </article>
     </section>
   </main>
 

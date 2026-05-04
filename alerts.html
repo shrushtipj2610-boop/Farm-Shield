@@ -4,26 +4,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alerts</title>
+  <link rel="icon" type="image/png" href="assets/farm_logo.png">
+  <link rel="shortcut icon" type="image/png" href="assets/farm_logo.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-<div class="container">
+<body class="soft-bg-page">
+<div class="app-shell">
 
-<div class="sidebar">
-  <h2>FarmShield</h2>
-  <a href="index.html"><img class="nav-icon" src="assets/dashboard_logo.png" alt="">Dashboard</a>
-  <a href="analytics.html"><img class="nav-icon" src="assets/analysics_logo1.png" alt="">Analytics</a>
-  <a href="alerts.html" class="active"><img class="nav-icon" src="assets/alert_logo.png" alt="">Alerts</a>
-  <a href="crop.html"><img class="nav-icon" src="assets/crop_logo.png" alt="">Crop Health</a>
-</div>
+  <aside class="sidebar">
+    <div class="logo-box">
+      <img src="assets/farm_logo.png" alt="FarmShield logo">
+      <div>
+        <h2>FarmShield</h2>
+        <p>By SoilSync</p>
+      </div>
+    </div>
 
-<div class="main">
-  <div class="header with-icon alerts-title">Alerts</div>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html"><img class="nav-icon" src="assets/dashboard_logo.png" alt="">Dashboard</a>
+      <a href="analytics.html"><img class="nav-icon" src="assets/analysics_logo1.png" alt="">Analytics</a>
+      <a href="alerts.html" class="active"><img class="nav-icon" src="assets/alert_logo.png" alt="">Alerts</a>
+      <a href="crop.html"><img class="nav-icon" src="assets/crop_logo.png" alt="">Crop Health</a>
+    </nav>
+  </aside>
 
-  <div id="alert-temp" class="card orange">Checking temperature...</div>
-  <div id="alert-soil" class="card orange">Checking soil moisture...</div>
-</div>
+  <main class="main">
+    <div class="header with-icon alerts-title">Alerts</div>
+
+    <div class="cards">
+      <div id="alert-temp" class="card orange">Checking temperature...</div>
+      <div id="alert-soil" class="card orange">Checking soil moisture...</div>
+      <div id="alert-summary" class="card green">Monitoring system status...</div>
+    </div>
+
+    <div class="box">
+      Alerts show when temperature or soil moisture readings move outside safe ranges.
+    </div>
+  </main>
 
 </div>
 
